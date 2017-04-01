@@ -1,9 +1,8 @@
-
-
 CC = gcc
-.PHONEY: all clean
+.PHONEY: all clean bruteForceStringMatch 
 
-
+bruteForceStringMatch: bruteForceStringMatch.c
+	$(CC) $< -o $@  
 sequentialsearch:sequentialsearch.c
 	$(CC) $< -o $@
 bubblesort:bubblesort.c
