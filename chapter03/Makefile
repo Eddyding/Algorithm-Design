@@ -1,5 +1,6 @@
 CC = gcc
-.PHONEY: all clean bruteForceStringMatch 
+.PHONEY: all clean
+all: bruteForceStringMatch  bruteForceClosestPoints
 
 bruteForceStringMatch: bruteForceStringMatch.c
 	$(CC) $< -o $@  
@@ -9,6 +10,7 @@ bubblesort:bubblesort.c
 	$(CC) $< -o $@
 selectsort:selectsort.c
 	$(CC) $< -o $@
-
+bruteForceClosestPoints:bruteForceClosestPoints.c
+	$(CC) $< -o $@
 clean:
 	rm *.o 
